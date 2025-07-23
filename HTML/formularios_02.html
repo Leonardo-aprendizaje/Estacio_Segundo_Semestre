@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 02</title>
+</head>
+<body>
+    <form>
+        <fieldset> <legend>Form basic</legend>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="">Phone</label>
+            <input type="text" name="phone" id="phone" pattern="\d{11}" required>
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+            <br><br>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Write your message here..."></textarea>
+            <br><br>
+            
+            <input type="submit" value="To send">
+            
+        </fieldset>
+
+
+    </form>    
+</body>
+</html>
