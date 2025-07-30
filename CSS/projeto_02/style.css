@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(224, 111, 46);
+}
+#container {
+    margin: auto;
+    width: 300px;
+}
+
+.fonte_1 {
+    font-family: 'ADLaM Display'; font-size: 22px;
+}
+
+.fonte_2 {
+    font-family: 'Aclonica'; font-size: 22px;
+}
