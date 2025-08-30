@@ -1,0 +1,53 @@
+/* Reset simples */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Caixas genéricas */
+.caixa {
+    border: 2px solid #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover para caixas */
+.caixa:hover {
+    background-color: #d1d8e0;
+}
+
+/* Footer fixo no fundo */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Botões customizados */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Área de testes grande */
+#area-teste {
+    min-height: 600px;      /* aumenta o espaço para testes */
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    padding: 30px;
+    background: #f8f9fa;
+    margin-bottom: 2rem;
+    overflow-y: auto;       /* scroll interno se ficar muito grande */
+}
+
+#area-teste h4 {
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}

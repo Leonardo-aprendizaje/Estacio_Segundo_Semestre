@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Base de Projeto</title>
-  
+
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <!-- Navbar básica -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Projeto Base</a>
@@ -30,20 +30,23 @@
     </div>
   </nav>
 
-  <!-- Conteúdo principal -->
-  <main class="container my-5">
-    <h1 class="mb-4">Bem-vindo à Base de Projeto</h1>
-    
-    <!-- Área para testar HTML/JS -->
-    <section id="conteudo">
-      <div class="card p-4 mb-3">
-        <h5>Exemplo de Caixa</h5>
-        <div id="resultado" class="caixa mb-2"></div>
-        <div id="resultado_valores" class="caixa"></div>
-      </div>
 
-      <button id="botaoTeste" class="btn btn-primary">Clique para testar JS</button>
+  
+            <!-- Área de testes -->
+
+
+  <main class="container my-5">
+    <h1 class="mb-4">Área de Testes</h1>
+    <section id="area-teste">
+      <p>Coloque seu HTML de teste aqui</p>
     </section>
+
+    <button id="limpar" class="btn btn-warning mb-3">Limpar Área de Testes</button>
+
+    <div id="console-interno" class="p-3 border rounded" style="background:#222; color:#0f0; height:200px; overflow-y:auto;">
+      <strong>Console Interno:</strong>
+      <div id="console-messages"></div>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -51,26 +54,10 @@
     &copy; Yasmin & Léo
   </footer>
 
-  <!-- Bootstrap 5 JS Bundle -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  
+
   <!-- JS customizado -->
-  <script>
-    // Exemplo de JavaScript pronto para testar
-    var alunos = ['Alex', 'Ana', 'João'];
-    let valores = [8, 1, 7, 4, 2, 9];
-
-    let botao = document.getElementById("botaoTeste");
-    let resultado = document.getElementById("resultado");
-    let resultado_valores = document.getElementById("resultado_valores");
-
-    botao.addEventListener("click", function() {
-        resultado.innerHTML = `<div class="caixa">Aluno escolhido: <b>${alunos[1]}</b></div>`;
-        resultado_valores.innerHTML = "";
-        for (let pos = 0; pos < valores.length; pos++) {
-            resultado_valores.innerHTML += `<div class="caixa">A posição ${pos} tem o valor ${valores[pos]}</div>`;
-        }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
